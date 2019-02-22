@@ -1,0 +1,115 @@
+// ===========================
+// pre-settlements
+// ===========================
+
+*
+  &:focus
+    box-shadow: none !important
+
+
+// Variables
+// ===========
+
+// fonts =======
+$f: 15px
+
+// font-weight
+
+// font-family
+$os: 'Open Sans', sans-serif
+$osc: 'Open Sans Condensed', sans-serif
+$cone: 'Carter One', cursive
+$osw: 'Oswald', sans-serif
+
+// classes
+.container
+  max-width: 1200px !important
+
+
+// Mixins
+// ==========
+
+// ===========================
+// style
+// ===========================
+
+// fixed =====
+.list-group
+  width: 200px
+  padding-top: 50px
+  .list-group-item
+    background: rgba(78, 75, 75, 0.5)
+    text-align: center !important
+    a
+      font-family: $cone
+      font-size: $f + 10
+      color: lightgrey
+      text-decoration: none
+      &:hover
+        color: rgba(255, 68, 0, 0.7)
+    
+  .active
+    background: rgba(255, 0, 0, 0.3)
+    border: none
+    a
+      &:hover
+        color: #fff
+
+// pages =======
+#index
+  canvas
+    height: 600px !important
+    position: absolute
+    top: 0
+  .profile_block
+    background: rgba(78, 75, 75, 0.5)
+    box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.5)
+    width: 500px
+    margin: 300px auto 30px 
+    font-family: $os
+    padding: 30px 0
+    img
+      width: 300px
+      height: 300px
+    .info
+      text-align: center
+      margin-top: 20px
+      h1
+        font-size: 45px
+        font-weight: 300 !important
+      h3
+        font-family: $osc
+        font-size: 25px
+        margin-top: 20px
+        font-weight: 300 !important
+      a
+        color: rgba(255, 68, 0, 0.7)
+        &:hover
+          text-decoration: none
+          color: #fff
+  #about
+    color: #fff
+    h3
+      font-family: $osw
+      font-size: 38px
+      line-height: 70px !important
+    header, aside
+      margin-top: 50px
+      padding: 15px
+
+  // media
+  @media( max-width: 560px )
+    .profile_block
+      width: auto
+      top: -300px
+      img
+        width: 250px
+        height: 250px
+      .info
+        h1
+          font-size: 36px
+        h3
+          font-size: 16px
+
+  #my_tools
+    

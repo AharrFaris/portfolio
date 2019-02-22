@@ -1,0 +1,71 @@
+﻿
+## HTML5 for old Browsers==================
+
+<!--[if IE]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+
+
+
+
+## Meta Tags ==================
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+## Google map cool one ================
+
+<script>
+  function initMap()
+    {
+        var location = {lat: 48.8606, lng: 2.3376}; //add your location here
+        var map = new google.maps.Map
+        (document.getElementById('map'),
+            {
+              zoom: 17,
+              center: location
+            }
+        );
+        var marker = new google.maps.Marker
+        (
+            {
+              position: location,
+              map: map
+            }
+        );
+  }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaXCjT11lGcH3M4_y0FMTj7pvP0gNwU4w&callback=initMap"></script>
+
+## EJS snippets comman =================
+
+→ Denotes the TAB key.
+Snippet→	Output
+ejs→	      <% %> - No output tag
+ejsout→	    <%= %> - Outputs HTML value
+ejsesc→	    <%- %> - Outputs unescaped
+ejscom→	    <%# %> - Comment tag
+ejslit→	    <%% %> - Outputs Literal <%
+ejsinc→	    include statement
+ejsfor→	    for Javascript Loop
+ejseach→	  forEach Javascript Loop
+ejsif→	    if Statement with condition
+
+ejselif→	  else if Statement - Middle section only. Assumes you have                 already written the first if statement.
+
+ejselse→	  else Statement - Middle section only. Assumes you have                    already written the first if statemen
+
+
+
+## font awesome 4.7.0 CDN (for video-wall)==============
+
+https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
+    
+
+## Footer =====================
+
+Copyright © 2018. / Privacy / Terms of Use & Cookies.
