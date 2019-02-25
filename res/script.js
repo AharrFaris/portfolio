@@ -13,7 +13,21 @@ window.addEventListener('load', () =>
 ==============================*/
 $(function()
 {
+	// tilting profile image
+	$('.profile_block img').tilt(
+	{
+		scale: 1.1
+	} );
 	
+	// calling tooltips
+	$('[data-toggle="tooltip"]').tooltip();
+	
+	// scroll to
+	$('.contact').click(function () {
+		$('html, body').animate({scrollTop: $('#footer').offset().top}, 2000); 
+ });
+
+
 } ); // jQuery
 
 
