@@ -185,7 +185,11 @@ footer {
   footer .icon_block {
     margin-top: 20px; }
     footer .icon_block a {
-      color: #fff; }
+      color: #fff;
+      margin: 0 8px;
+      transition: 0.3s ease-in-out; }
+      footer .icon_block a span::before {
+        margin-left: 0; }
       footer .icon_block a:hover {
         color: red;
         text-decoration: none; }
