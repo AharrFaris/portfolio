@@ -24,7 +24,7 @@ $(function()
 	
 	// scroll to
 	$('.contact').click(function () {
-		$('html, body').animate({scrollTop: $('#footer').offset().top}, 2000); 
+		$('html, body').animate({scrollTop: $('#contact').offset().top}, 2000); 
  });
 
 
