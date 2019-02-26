@@ -144,13 +144,16 @@
     z-index: -1; }
 #index #skills .cus_cont_2 .skill_block {
   margin-top: 100px; }
+@media( max-width: 768px ) {
+  #index #skills .cus_cont_2 .skill_block {
+    margin-top: 175px; } }
   #index #skills .cus_cont_2 .skill_block h3 {
     color: rgba(255, 0, 0, 0.7);
     text-align: center; }
 #index #skills .cus_cont_2 .skill {
   margin-top: 30px;
   font-family: "Montserrat", sans-serif; }
-@media( max-width: 992px ) {
+@media( max-width: 768px ) {
   #index #skills .cus_cont_2 .skill {
     margin-top: 60px;
     padding: 0 15px; } }
