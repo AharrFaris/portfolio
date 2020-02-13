@@ -1,124 +1,164 @@
 *:focus {
-  box-shadow: none !important; }
+  box-shadow: none !important;
+}
 
 .container {
-  max-width: 1200px !important; }
+  max-width: 1200px !important;
+}
 
 .cus_cont {
   max-width: 450px;
-  margin: 0 auto; }
-@media( max-width: 320px ) {
+  margin: 0 auto;
+}
+@media (max-width: 320px) {
   .cus_cont {
-    max-width: 300px; } }
+    max-width: 300px;
+  }
+}
+
 .cus_cont_2 {
   max-width: 650px;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 .list-group {
   width: 200px;
-  padding-top: 50px; }
-  .list-group .list-group-item {
-    background: rgba(78, 75, 75, 0.5);
-    text-align: center !important; }
-    .list-group .list-group-item a {
-      font-family: "Carter One", cursive;
-      font-size: 25px;
-      color: lightgrey;
-      text-decoration: none; }
-      .list-group .list-group-item a:hover {
-        color: rgba(255, 68, 0, 0.7); }
-  .list-group .active {
-    background: rgba(255, 0, 0, 0.3);
-    border: none; }
-    .list-group .active a:hover {
-      color: #fff; }
+  padding-top: 50px;
+}
+.list-group .list-group-item {
+  background: rgba(78, 75, 75, 0.5);
+  text-align: center !important;
+}
+.list-group .list-group-item a {
+  font-family: "Carter One", cursive;
+  font-size: 25px;
+  color: lightgrey;
+  text-decoration: none;
+}
+.list-group .list-group-item a:hover {
+  color: rgba(255, 68, 0, 0.7);
+}
+.list-group .active {
+  background: rgba(255, 0, 0, 0.3);
+  border: none;
+}
+.list-group .active a:hover {
+  color: #fff;
+}
 
 #index canvas {
   height: 600px !important;
   position: absolute;
-  top: 0; }
+  top: 0;
+}
 #index .profile_block {
   background: rgba(78, 75, 75, 0.5);
   box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.5);
   width: 500px;
   margin: 300px auto 30px;
   font-family: "Open Sans", sans-serif;
-  padding: 30px 0; }
-  #index .profile_block img {
-    width: 300px;
-    height: 300px;
-    z-index: 1; }
-  #index .profile_block .info {
-    text-align: center;
-    margin-top: 20px; }
-    #index .profile_block .info h1 {
-      font-size: 45px;
-      font-weight: 300 !important; }
-    #index .profile_block .info h3 {
-      font-family: "Open Sans Condensed", sans-serif;
-      font-size: 25px;
-      margin-top: 20px;
-      font-weight: 300 !important; }
-    #index .profile_block .info a {
-      color: rgba(255, 68, 0, 0.7); }
-      #index .profile_block .info a:hover {
-        text-decoration: none;
-        color: #fff; }
-@media( max-width: 560px ) {
+  padding: 30px 0;
+}
+#index .profile_block img {
+  width: 300px;
+  height: 300px;
+  z-index: 1;
+}
+#index .profile_block .info {
+  text-align: center;
+  margin-top: 20px;
+}
+#index .profile_block .info h1 {
+  font-size: 45px;
+  font-weight: 300 !important;
+}
+#index .profile_block .info h3 {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 25px;
+  margin-top: 20px;
+  font-weight: 300 !important;
+}
+#index .profile_block .info a {
+  color: rgba(255, 68, 0, 0.7);
+}
+#index .profile_block .info a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+@media (max-width: 560px) {
   #index .profile_block {
     width: auto;
-    top: -300px; }
-    #index .profile_block img {
-      width: 250px;
-      height: 250px; }
-    #index .profile_block .info h1 {
-      font-size: 36px; }
-    #index .profile_block .info h3 {
-      font-size: 16px; } }
+    top: -300px;
+  }
+  #index .profile_block img {
+    width: 250px;
+    height: 250px;
+  }
+  #index .profile_block .info h1 {
+    font-size: 36px;
+  }
+  #index .profile_block .info h3 {
+    font-size: 16px;
+  }
+}
 #index #about {
   color: #fff;
-  margin-top: 50px; }
-  #index #about h3 {
-    font-family: "Oswald", sans-serif;
-    font-size: 38px;
-    line-height: 60px; }
-  #index #about header, #index #about aside {
-    margin-top: 50px;
-    padding: 15px; }
-  #index #about header span {
-    content: "";
-    background: url(../img/svg/cowboy_hat.svg) no-repeat center center;
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    width: 60px;
-    height: 50px; }
+  margin-top: 50px;
+}
+#index #about h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 38px;
+  line-height: 60px;
+}
+#index #about header, #index #about aside {
+  margin-top: 50px;
+  padding: 15px;
+}
+#index #about header span::after {
+  content: "";
+  background: url(../img/svg/cowboy_hat.svg) no-repeat center center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  width: 60px;
+  height: 50px;
+}
+#index #about header::after {
+  content: "";
+  background: url(../img/svg/about_bg.svg) no-repeat center center;
+  background-size: cover;
+  position: absolute;
+  top: -20px;
+  left: -300px;
+  width: 1350px;
+  height: 380px;
+}
+@media (max-width: 590px) {
   #index #about header::after {
-    content: "";
-    background: url(../img/svg/about_bg.svg) no-repeat center center;
-    background-size: cover;
-    position: absolute;
-    top: -20px;
-    left: -300px;
-    width: 1350px;
-    height: 380px; }
-@media( max-width: 590px ) {
+    height: 430px;
+  }
+}
+@media (max-width: 434px) {
   #index #about header::after {
-    height: 430px; } }
-@media( max-width: 434px ) {
-  #index #about header::after {
-    height: 550px; } }
+    height: 550px;
+  }
+}
+#index #about aside {
+  padding-top: 40px;
+}
+@media (max-width: 992px) {
   #index #about aside {
-    padding-top: 40px; }
-@media( max-width: 992px ) {
-  #index #about aside {
-    padding-top: 0; } }
-    #index #about aside .lead {
-      font-family: "Open Sans Condensed", sans-serif;
-      font-size: 22px !important; }
+    padding-top: 0;
+  }
+}
+#index #about aside .lead {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 22px !important;
+}
 #index #my_tool, #index #skills {
   margin-top: 100px;
-  font-family: "Coiny", cursive; }
+  font-family: "Coiny", cursive;
+}
 #index #my_tool h2 span::after {
   content: "";
   background: url(../img/svg/stroke_1.svg) no-repeat center center;
@@ -126,72 +166,97 @@
   position: absolute;
   width: 300px;
   height: 50px;
-  z-index: -1; }
+  z-index: -1;
+}
 #index #my_tool a {
-  margin-top: 50px; }
-  #index #my_tool a img {
-    width: 70px;
-    height: 70px; }
+  margin-top: 50px;
+}
+#index #my_tool a img {
+  width: 70px;
+  height: 70px;
+}
 #index #skills h2 {
-  font-size: 45px; }
-  #index #skills h2 span::after {
-    content: "";
-    background: url(../img/svg/stroke_2.svg) no-repeat center center;
-    background-size: cover;
-    position: absolute;
-    width: 300px;
-    height: 50px;
-    z-index: -1; }
+  font-size: 45px;
+}
+#index #skills h2 span::after {
+  content: "";
+  background: url(../img/svg/stroke_2.svg) no-repeat center center;
+  background-size: cover;
+  position: absolute;
+  width: 300px;
+  height: 50px;
+  z-index: -1;
+}
 #index #skills .cus_cont_2 .skill_block {
-  margin-top: 100px; }
-@media( max-width: 768px ) {
+  margin-top: 100px;
+}
+@media (max-width: 768px) {
   #index #skills .cus_cont_2 .skill_block {
-    margin-top: 175px; } }
-  #index #skills .cus_cont_2 .skill_block h3 {
-    color: rgba(255, 0, 0, 0.7);
-    text-align: center; }
+    margin-top: 175px;
+  }
+}
+#index #skills .cus_cont_2 .skill_block h3 {
+  color: rgba(255, 0, 0, 0.7);
+  text-align: center;
+}
 #index #skills .cus_cont_2 .skill {
   margin-top: 30px;
-  font-family: "Montserrat", sans-serif; }
-@media( max-width: 768px ) {
+  font-family: "Montserrat", sans-serif;
+}
+@media (max-width: 768px) {
   #index #skills .cus_cont_2 .skill {
     margin-top: 60px;
-    padding: 0 15px; } }
-  #index #skills .cus_cont_2 .skill p {
-    font-size: 18px; }
-  #index #skills .cus_cont_2 .skill .progress {
-    padding: 0;
-    height: 25px;
-    background: #333; }
-    #index #skills .cus_cont_2 .skill .progress .progress-bar {
-      background: rgba(255, 0, 0, 0.2); }
+    padding: 0 15px;
+  }
+}
+#index #skills .cus_cont_2 .skill p {
+  font-size: 18px;
+}
+#index #skills .cus_cont_2 .skill .progress {
+  padding: 0;
+  height: 25px;
+  background: #333;
+}
+#index #skills .cus_cont_2 .skill .progress .progress-bar {
+  background: rgba(255, 0, 0, 0.2);
+}
 
 footer {
   text-align: center;
   margin-top: 100px;
-  padding: 50px 15px; }
-  footer p {
-    margin-top: 30px; }
-    footer p span {
-      color: red; }
-  footer h4 {
-    margin-top: 30px;
-    font-family: "Coiny", cursive; }
-  footer h5 a {
-    color: #888; }
-    footer h5 a:hover {
-      text-decoration: none;
-      color: rgba(255, 68, 0, 0.5); }
-  footer .icon_block {
-    margin-top: 20px; }
-    footer .icon_block a {
-      color: #fff;
-      margin: 0 8px;
-      transition: 0.3s ease-in-out; }
-      footer .icon_block a span::before {
-        margin-left: 0; }
-      footer .icon_block a:hover {
-        color: red;
-        text-decoration: none; }
+  padding: 50px 15px;
+}
+footer p {
+  margin-top: 30px;
+}
+footer p span {
+  color: red;
+}
+footer h4 {
+  margin-top: 30px;
+  font-family: "Coiny", cursive;
+}
+footer h5 a {
+  color: #888;
+}
+footer h5 a:hover {
+  text-decoration: none;
+  color: rgba(255, 68, 0, 0.5);
+}
+footer .icon_block {
+  margin-top: 20px;
+}
+footer .icon_block a {
+  color: #fff;
+  margin: 0 8px;
+  transition: 0.3s ease-in-out;
+}
+footer .icon_block a span::before {
+  margin-left: 0;
+}
+footer .icon_block a:hover {
+  color: red;
+  text-decoration: none;
+}
 
 /*# sourceMappingURL=sass.css.map */
